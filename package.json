@@ -22,7 +22,8 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "pub": "release-it"
+    "pub": "release-it",
+    "test:demo": "cd demo && node ../bin.js"
   },
   "dependencies": {
     "cac": "^6.7.12",
