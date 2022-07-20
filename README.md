@@ -1,6 +1,8 @@
 # vite-bundle-visualizer
 
-Visualize vite bundle, like [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+Visualize vite bundle, like [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer).
+
+Use [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
 
 ## Usage
 
