@@ -5,6 +5,9 @@
   "bin": {
     "vite-bundle-visualizer": "bin.js"
   },
+  "files": [
+    "bin.js"
+  ],
   "keywords": [
     "vite",
     "bundle-visualizer",
