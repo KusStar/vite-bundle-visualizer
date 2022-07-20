@@ -5,6 +5,6 @@ type Options = {
   open?: boolean,
 }
 
-const start: (options: Options) => void
+declare const start: (options: Options) => void
 
 export default start;
