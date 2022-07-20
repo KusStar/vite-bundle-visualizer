@@ -6,6 +6,7 @@
     "vite-bundle-visualizer": "bin.js"
   },
   "files": [
+    "index.js",
     "bin.js"
   ],
   "keywords": [
@@ -17,9 +18,8 @@
   "repository": "KusStar/vite-bundle-visualizer",
   "license": "MIT",
   "author": "KusStar (https://github.com/KusStar)",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "pub": "release-it"
   },
