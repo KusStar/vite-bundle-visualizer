@@ -25,6 +25,7 @@
     "pub": "release-it"
   },
   "dependencies": {
+    "cac": "^6.7.12",
     "rollup-plugin-visualizer": "^5.7.1"
   },
   "devDependencies": {

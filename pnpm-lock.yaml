@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.0.0
+  cac: ^6.7.12
   release-it: ^15.1.2
   rollup-plugin-visualizer: ^5.7.1
 
 dependencies:
+  cac: 6.7.12
   rollup-plugin-visualizer: 5.7.1
 
 devDependencies:
@@ -393,6 +395,11 @@ packages:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
     engines: {node: '>= 0.8'}
     dev: true
+
+  /cac/6.7.12:
+    resolution: {integrity: sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==}
+    engines: {node: '>=8'}
+    dev: false
 
   /cacheable-lookup/6.0.4:
     resolution: {integrity: sha512-mbcDEZCkv2CZF4G01kr8eBd/5agkt9oCqz75tJMSIsquvRZ2sL6Hi5zGVKi/0OSC9oO1GHfJ2AV0ZIOY9vye0A==}
