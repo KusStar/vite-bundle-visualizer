@@ -7,6 +7,7 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "bin.js"
   ],
   "keywords": [
