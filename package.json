@@ -1,0 +1,30 @@
+{
+  "name": "vite-bundle-visualizer",
+  "description": "Visualize vite bundle",
+  "version": "0.0.3",
+  "bin": {
+    "vite-bundle-visualizer": "bin.js"
+  },
+  "keywords": [
+    "vite",
+    "bundle-visualizer",
+    "bundle-analyzer"
+  ],
+  "homepage": "https://github.com/KusStar/vite-bundle-visualizer#readme",
+  "repository": "KusStar/vite-bundle-visualizer",
+  "license": "MIT",
+  "author": "KusStar (https://github.com/KusStar)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pub": "release-it"
+  },
+  "dependencies": {
+    "rollup-plugin-visualizer": "^5.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "release-it": "^15.1.2"
+  }
+}
