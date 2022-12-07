@@ -6,13 +6,13 @@ Use [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
 
 ## Usage
 
-```shell
+```console
 # In your vite project's root
-npx vite-bundle-visualizer
+$ npx vite-bundle-visualizer
 # Then open stats.html in browser
 ```
 
-```shell
+```console
 $ vite-bundle-visualizer --help
 
 vite-bundle-visualizer
@@ -33,19 +33,25 @@ Options:
 
 #### Treemap
 
-`vite-bundle-visualizer`
+```console
+$ vite-bundle-visualizer
+```
 
 ![treemap](./screenshots/treemap.png)
 
 #### Sunburst
 
-`vite-bundle-visualizer --template sunburst`
+```console
+$ vite-bundle-visualizer --template sunburst
+```
 
 ![sunburst](./screenshots/sunburst.png)
 
 #### Network
 
-`vite-bundle-visualizer --template network`
+```console
+$ vite-bundle-visualizer --template network
+```
 
 ![network](./screenshots/network.jpg)
 
