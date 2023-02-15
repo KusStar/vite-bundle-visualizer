@@ -1,12 +1,17 @@
 #! /usr/bin/env node
 const cac = require('cac')
 const cli = cac('vite-bundle-visualizer')
+const { join } = require('path')
 
-cli.option('--template <template>', 'Template to use, options are "treemap", "sunburst" and "network"', {
+const DEFAULT_OUTPUT = join(__dirname, './stats.html')
+
+cli.option('--template -t <template>', 'Template to use, options are "json", "treemap", "sunburst" and "network"', {
   default: 'treemap'
 })
-cli.option('--output <output>', 'Output file path, should be **/*.html')
-cli.option('--open <open>', 'Should open browser after generated', {
+cli.option('--output -o <filepath>', 'Output file path, should be "**/*.html" or "**/*.json"', {
+  default: DEFAULT_OUTPUT,
+})
+cli.option('--open <open>', 'Should open browser after generated, except when template is "json"', {
   default: true
 })
 
@@ -14,13 +19,13 @@ cli.help()
 
 const parsed = cli.parse()
 
-const { template, h, help, output, open } = parsed.options
+const { template, t, h, help, output, o, open } = parsed.options
 
 const start = require('./index')
 
 start({
-  help: h || help,
-  template,
-  output,
+  help: help || h,
+  template: template || t,
+  output: output || o || DEFAULT_OUTPUT,
   open: open === true || open === 'true' || Number(open) > 0
 })

@@ -1,5 +1,4 @@
 const { visualizer } = require('rollup-plugin-visualizer')
-const { join } = require('path')
 const Module = require('module')
 
 const start = ({
@@ -17,10 +16,20 @@ const start = ({
   _module.paths = Module._nodeModulePaths(process.cwd())
   const { build } = _module.require('vite')
 
-  const outFile = typeof output === 'string' && output.endsWith('.html') ? output : join(__dirname, './stats.html')
+  let outFile
+
+  if (template === 'json') {
+    outFile = output.replace(/\.html$/, '.json')
+    open = false
+    console.log(`Generating ${template} result to ${outFile}...\n`)
+  } else {
+    outFile = output
+    open = output.endsWith('.html')
+  }
+
 
   build({
-    plugins: [visualizer({ open, filename: outFile, title: 'Vite Bundle Visualizer', template })]
+    plugins: [visualizer({ open, filename: outFile, title: 'Vite Bundle Visualizer', template, json: template === 'json' })]
   })
 }
 
