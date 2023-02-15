@@ -21,10 +21,10 @@ Usage:
   $ vite-bundle-visualizer <command> [options]
 
 Options:
-  --template <template>  Template to use, options are "treemap", "sunburst" and "network" (default: treemap)
-  --output <output>      Output file path, should be **/*.html
-  --open <open>          Should open browser after generated (default: true)
-  -h, --help             Display this message
+  --template -t <template>  Template to use, options are "json", "treemap", "sunburst" and "network" (default: treemap)
+  --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: /Users/kuss/project/sides/oss/vite-bundle-visualizer/stats.html)
+  --open <open>             Should open browser after generated, except when template is "json" (default: true)
+  -h, --help                Display this message
 ```
 
 ## Screenshots
@@ -42,7 +42,7 @@ $ vite-bundle-visualizer
 #### Sunburst
 
 ```console
-$ vite-bundle-visualizer --template sunburst
+$ vite-bundle-visualizer -t sunburst
 ```
 
 ![sunburst](./screenshots/sunburst.png)
@@ -50,10 +50,18 @@ $ vite-bundle-visualizer --template sunburst
 #### Network
 
 ```console
-$ vite-bundle-visualizer --template network
+$ vite-bundle-visualizer -t network
 ```
 
 ![network](./screenshots/network.jpg)
+
+#### Json
+
+```console
+$ vite-bundle-visualizer -t json
+```
+
+[demo/stats.json](./demo/stats.json)
 
 ## Dependencies
 
