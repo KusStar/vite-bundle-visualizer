@@ -21,7 +21,7 @@ Usage:
   $ vite-bundle-visualizer <command> [options]
 
 Options:
-  --template -t <template>  Template to use, options are "json", "treemap", "sunburst" and "network" (default: treemap)
+  --template -t <template>  Template to use, options are "raw-data" (JSON), "treemap", "list" (YAML), "sunburst" and "network" (default: treemap)
   --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: /Users/kuss/project/sides/oss/vite-bundle-visualizer/stats.html)
   --open <open>             Should open browser after generated, except when template is "json" (default: true)
   -h, --help                Display this message
@@ -55,13 +55,24 @@ $ vite-bundle-visualizer -t network
 
 ![network](./screenshots/network.jpg)
 
-#### Json
+#### Raw data
+
+Output raw data (JSON) of stats
 
 ```console
-$ vite-bundle-visualizer -t json
+# @deprecated vite-bunlde-visualizer -t json
+$ vite-bundle-visualizer -t raw-data
 ```
 
-[demo/stats.json](./demo/stats.json)
+#### List
+
+Output yml file with all the data
+
+```console
+$ vite-bundle-visualizer -t list
+```
+
+[demo/stats.yml](./demo/stats.yml)
 
 ## Dependencies
 
