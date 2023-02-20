@@ -18,7 +18,7 @@ const start = ({
 
   let outFile
 
-  if (template === 'json') {
+  if (template === 'raw-data') {
     outFile = output.replace(/\.html$/, '.json')
     open = false
     console.log(`Generating ${template} result to ${outFile}...\n`)
@@ -29,7 +29,7 @@ const start = ({
 
 
   build({
-    plugins: [visualizer({ open, filename: outFile, title: 'Vite Bundle Visualizer', template, json: template === 'json' })]
+    plugins: [visualizer({ open, filename: outFile, title: 'Vite Bundle Visualizer', template })]
   })
 }
 
