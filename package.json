@@ -26,8 +26,8 @@
     "test:demo": "cd demo && node ../bin.js"
   },
   "dependencies": {
-    "cac": "^6.7.12",
-    "rollup-plugin-visualizer": "^5.7.1"
+    "cac": "^6.7.14",
+    "rollup-plugin-visualizer": "^5.9.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
