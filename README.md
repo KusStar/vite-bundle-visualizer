@@ -64,6 +64,8 @@ Output raw data (JSON) of stats
 $ vite-bundle-visualizer -t raw-data
 ```
 
+[demo/stats.json](./demo/stats.json)
+
 #### List
 
 Output yml file with all the data
