@@ -5,7 +5,7 @@ const { join } = require('path')
 
 const DEFAULT_OUTPUT = join(__dirname, './stats.html')
 
-cli.option('--template -t <template>', 'Template to use, options are "json", "treemap", "sunburst" and "network"', {
+cli.option('--template -t <template>', 'Template to use, options are "raw-data" (JSON), "treemap", "list", "sunburst" and "network"', {
   default: 'treemap'
 })
 cli.option('--output -o <filepath>', 'Output file path, should be "**/*.html" or "**/*.json"', {
