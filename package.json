@@ -1,7 +1,7 @@
 {
   "name": "vite-bundle-visualizer",
   "description": "Visualize vite bundle",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "bin": {
     "vite-bundle-visualizer": "bin.js"
   },
