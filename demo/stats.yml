@@ -1,0 +1,49 @@
+assets/index.3f40be11.js:
+  /index.html:
+    rendered: 0
+  /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.production.min.js:
+    rendered: 132530
+  /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.production.min.js?commonjs-exports:
+    rendered: 33
+  /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/client.js:
+    rendered: 109
+  /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/client.js?commonjs-exports:
+    rendered: 16
+  /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js:
+    rendered: 772
+  /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js?commonjs-module:
+    rendered: 29
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react-jsx-runtime.production.min.js:
+    rendered: 912
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react-jsx-runtime.production.min.js?commonjs-exports:
+    rendered: 40
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react.production.min.js:
+    rendered: 7591
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react.production.min.js?commonjs-exports:
+    rendered: 30
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/index.js:
+    rendered: 81
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/index.js?commonjs-module:
+    rendered: 26
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js:
+    rendered: 96
+  /node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js?commonjs-module:
+    rendered: 31
+  /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/cjs/scheduler.production.min.js:
+    rendered: 4314
+  /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/cjs/scheduler.production.min.js?commonjs-exports:
+    rendered: 34
+  /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/index.js:
+    rendered: 89
+  /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/index.js?commonjs-module:
+    rendered: 30
+  /src/App.tsx:
+    rendered: 93
+  /src/index.css:
+    rendered: 17
+  /src/main.tsx:
+    rendered: 136
+  react/jsx-runtime:
+    rendered: 35
+  vite/modulepreload-polyfill:
+    rendered: 1576
