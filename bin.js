@@ -14,12 +14,13 @@ cli.option('--output -o <filepath>', 'Output file path, should be "**/*.html" or
 cli.option('--open <open>', 'Should open browser after generated, except when template is "json"', {
   default: true
 })
+cli.option('--config -c <file>', 'Use specified vite config file')
 
 cli.help()
 
 const parsed = cli.parse()
 
-const { template, t, h, help, output, o, open } = parsed.options
+const { template, t, h, help, output, o, open, config, c } = parsed.options
 
 const start = require('./index')
 
@@ -27,5 +28,6 @@ start({
   help: help || h,
   template: template || t,
   output: output || o || DEFAULT_OUTPUT,
-  open: open === true || open === 'true' || Number(open) > 0
+  open: open === true || open === 'true' || Number(open) > 0,
+  config: config || c,
 })
