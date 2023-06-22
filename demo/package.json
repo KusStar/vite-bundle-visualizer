@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "vbv": "node ../bin.js"
   },
   "dependencies": {
     "react": "18.2.0",
