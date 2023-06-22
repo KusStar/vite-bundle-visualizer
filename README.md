@@ -10,6 +10,9 @@ Use [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
 # In your vite project's root
 $ npx vite-bundle-visualizer
 # Then open stats.html in browser
+
+# Use specified vite config file
+$ npx vite-bundle-visualizer -c your.config.js
 ```
 
 ```console
@@ -21,9 +24,10 @@ Usage:
   $ vite-bundle-visualizer <command> [options]
 
 Options:
-  --template -t <template>  Template to use, options are "raw-data" (JSON), "treemap", "list" (YAML), "sunburst" and "network" (default: treemap)
+  --template -t <template>  Template to use, options are "raw-data" (JSON), "treemap", "list", "sunburst" and "network" (default: treemap)
   --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: /Users/kuss/project/sides/oss/vite-bundle-visualizer/stats.html)
   --open <open>             Should open browser after generated, except when template is "json" (default: true)
+  --config -c <file>        Use specified vite config file
   -h, --help                Display this message
 ```
 
