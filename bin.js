@@ -18,11 +18,13 @@ cli.option('--config -c <file>', 'Use specified vite config file')
 
 cli.option('--entry --input -i', 'Use specified entry file, default is "index.html"')
 
+cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false')
+
 cli.help()
 
 const parsed = cli.parse()
 
-const { template, t, h, help, output, o, open, config, c, entry, input, i } = parsed.options
+const { template, t, h, help, output, o, open, config, c, entry, input, i, sourcemap } = parsed.options
 
 const start = require('./index')
 
@@ -32,5 +34,6 @@ start({
   output: output || o || DEFAULT_OUTPUT,
   open: open === true || open === 'true' || Number(open) > 0,
   config: config || c,
-  entry: entry || input || i
+  entry: entry || input || i,
+  sourcemap
 })
