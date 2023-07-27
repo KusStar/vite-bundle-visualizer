@@ -25,9 +25,10 @@ Usage:
 
 Options:
   --template -t <template>  Template to use, options are "raw-data" (JSON), "treemap", "list", "sunburst" and "network" (default: treemap)
-  --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: /Users/kuss/project/sides/oss/vite-bundle-visualizer/stats.html)
+  --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: ./stats.html)
   --open <open>             Should open browser after generated, except when template is "json" (default: true)
   --config -c <file>        Use specified vite config file
+  --entry --input -i        Use specified entry file, default is "index.html"
   -h, --help                Display this message
 ```
 
