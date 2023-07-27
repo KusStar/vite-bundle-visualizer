@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "cac": "^6.7.14",
-    "rollup-plugin-visualizer": "^5.9.0"
+    "rollup-plugin-visualizer": "^5.9.2"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
