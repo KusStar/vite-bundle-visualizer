@@ -16,11 +16,13 @@ cli.option('--open <open>', 'Should open browser after generated, except when te
 })
 cli.option('--config -c <file>', 'Use specified vite config file')
 
+cli.option('--entry --input -i', 'Use specified entry file, default is "index.html"')
+
 cli.help()
 
 const parsed = cli.parse()
 
-const { template, t, h, help, output, o, open, config, c } = parsed.options
+const { template, t, h, help, output, o, open, config, c, entry, input, i } = parsed.options
 
 const start = require('./index')
 
@@ -30,4 +32,5 @@ start({
   output: output || o || DEFAULT_OUTPUT,
   open: open === true || open === 'true' || Number(open) > 0,
   config: config || c,
+  entry: entry || input || i
 })
