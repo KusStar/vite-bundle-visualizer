@@ -1,9 +1,12 @@
 #! /usr/bin/env node
 const cac = require('cac')
 const cli = cac('vite-bundle-visualizer')
-const { join } = require('path')
+const path = require('path')
+const tmp = require('tmp')
 
-const DEFAULT_OUTPUT = join(__dirname, './stats.html')
+const tmpobj = tmp.dirSync();
+
+const DEFAULT_OUTPUT = path.join(tmpobj.name, 'stats.html');
 
 cli.option('--template -t <template>', 'Template to use, options are "raw-data" (JSON), "treemap", "list", "sunburst" and "network"', {
   default: 'treemap'
