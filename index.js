@@ -1,8 +1,8 @@
-const { visualizer } = require('rollup-plugin-visualizer')
-const Module = require('module')
-const fs = require('fs')
+import { visualizer } from 'rollup-plugin-visualizer'
+import importFrom from 'import-from-esm'
+import * as fs from 'node:fs'
 
-const start = ({
+const start = async ({
   help,
   template = 'treemap',
   open,
@@ -20,11 +20,9 @@ const start = ({
     template = 'raw-data'
   }
 
-  // start requiring from cwd's node_modules
-  const _module = new Module()
-  _module.paths = Module._nodeModulePaths(process.cwd())
+  // import from cwd's node_modules
   /** @type {import('vite')} */
-  const { build } = _module.require('vite')
+  const { build } = await importFrom(process.cwd(), 'vite')
 
   let outFile
 
@@ -57,7 +55,7 @@ const start = ({
     }
   }
 
-  build({
+  await build({
     configFile: config,
     plugins: [
       {
@@ -86,4 +84,4 @@ const start = ({
   })
 }
 
-module.exports = start
+export default start

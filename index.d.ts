@@ -6,6 +6,6 @@ type Options = {
   config?: string,
 }
 
-declare const start: (options: Options) => void
+declare const start: (options: Options) => Promise<void>
 
 export default start;

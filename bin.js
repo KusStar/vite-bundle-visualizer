@@ -1,8 +1,11 @@
-#! /usr/bin/env node
-const cac = require('cac')
+#!/usr/bin/env node
+
+import cac from 'cac'
+import * as path from 'node:path'
+import * as tmp from 'tmp'
+import start from './index.js'
+
 const cli = cac('vite-bundle-visualizer')
-const path = require('path')
-const tmp = require('tmp')
 
 const tmpobj = tmp.dirSync();
 
@@ -29,9 +32,7 @@ const parsed = cli.parse()
 
 const { template, t, h, help, output, o, open, config, c, entry, input, i, sourcemap } = parsed.options
 
-const start = require('./index')
-
-start({
+await start({
   help: help || h,
   template: template || t,
   output: output || o || DEFAULT_OUTPUT,
