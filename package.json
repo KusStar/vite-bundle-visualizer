@@ -27,12 +27,12 @@
   },
   "dependencies": {
     "cac": "^6.7.14",
-    "rollup-plugin-visualizer": "^5.9.2",
+    "rollup-plugin-visualizer": "^5.11.0",
     "tmp": "^0.2.1"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "release-it": "^15.1.2",
-    "vite": "^4.3.9"
+    "@types/node": "^18.19.3",
+    "release-it": "^17.0.1",
+    "vite": "^5.0.7"
   }
 }
