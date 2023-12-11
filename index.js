@@ -74,14 +74,14 @@ const start = async ({
     build: {
       ...viteBuildOptions
     }
-  }).then(() => {
-    // fix encoding for list template
-    if (template === 'list') {
-      const tent = Buffer.from(fs.readFileSync(outFile)).toString().replaceAll('\0', '')
-      fs.writeFileSync(outFile, tent, { encoding: 'utf-8' });
-    }
-    console.log(`\nGenerated at ${outFile}`)
   })
+
+  // fix encoding for list template
+  if (template === 'list') {
+    const tent = Buffer.from(fs.readFileSync(outFile)).toString().replaceAll('\0', '')
+    fs.writeFileSync(outFile, tent, { encoding: 'utf-8' });
+  }
+  console.log(`\nGenerated at ${outFile}`)
 }
 
 export default start
