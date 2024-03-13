@@ -26,6 +26,7 @@
     "pub": "release-it",
     "test:vite3": "cd fixtures/vite3 && pnpm i && pnpm vite-bundle-visualizer",
     "test:vite4": "cd fixtures/vite4 && pnpm i && pnpm vite-bundle-visualizer",
+    "test:yarn-pnp": "cd fixtures/yarn-pnp && yarn && yarn vite-bundle-visualizer",
     "test:demo": "cd demo/react && pnpm i && pnpm run sizecheck"
   },
   "dependencies": {
