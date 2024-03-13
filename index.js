@@ -2,6 +2,18 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import importFrom from 'import-from-esm'
 import * as fs from 'node:fs'
 
+/**
+ * @returns {Promise<import('vite')>}
+ */
+async function importVite() {
+  /** @type {import('vite')} */
+  let vite = await importFrom.silent(process.cwd(), 'vite');
+  try {
+    vite ??= await import(import.meta.resolve('vite'));
+  } catch {}
+  return vite;
+}
+
 const start = async ({
   help,
   template = 'treemap',
@@ -21,8 +33,7 @@ const start = async ({
   }
 
   // import from cwd's node_modules
-  /** @type {import('vite')} */
-  const { build } = await importFrom(process.cwd(), 'vite')
+  const { build } = await importVite()
 
   let outFile
 
