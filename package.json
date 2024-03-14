@@ -24,7 +24,10 @@
   "types": "./index.d.ts",
   "scripts": {
     "pub": "release-it",
-    "test:demo": "cd demo/react && npm run sizecheck"
+    "test:vite3": "cd fixtures/vite3 && pnpm i && pnpm vite-bundle-visualizer",
+    "test:vite4": "cd fixtures/vite4 && pnpm i && pnpm vite-bundle-visualizer",
+    "test:yarn-pnp": "cd fixtures/yarn-pnp && yarn && yarn vite-bundle-visualizer",
+    "test:demo": "cd demo/react && pnpm i && pnpm run sizecheck"
   },
   "dependencies": {
     "cac": "^6.7.14",
@@ -36,5 +39,8 @@
     "@types/node": "^18.19.3",
     "release-it": "^17.0.1",
     "vite": "^5.0.7"
+  },
+  "engines": {
+    "node": "^18.19.0 || >=20.6.0"
   }
 }

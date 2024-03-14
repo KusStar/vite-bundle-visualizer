@@ -1,0 +1,16 @@
+{
+  "name": "yarn-pnp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "5.1.5",
+    "vite-bundle-visualizer": "portal:../../"
+  },
+  "packageManager": "yarn@4.1.1"
+}
