@@ -24,6 +24,7 @@
   "types": "./index.d.ts",
   "scripts": {
     "pub": "release-it",
+    "test": "pnpm run test:vite3 --open false && pnpm run test:vite4 --open false && pnpm run test:yarn-pnp --open false && pnpm run test:demo --open false",
     "test:vite3": "cd fixtures/vite3 && pnpm i && pnpm vite-bundle-visualizer",
     "test:vite4": "cd fixtures/vite4 && pnpm i && pnpm vite-bundle-visualizer",
     "test:yarn-pnp": "cd fixtures/yarn-pnp && yarn && yarn vite-bundle-visualizer",

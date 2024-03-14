@@ -29,7 +29,4 @@ jobs:
 
       - run: pnpm i --frozen-lockfile -P
 
-      - run: pnpm run test:demo
-      - run: pnpm run test:vite3
-      - run: pnpm run test:vite4
-      - run: pnpm run test:yarn-pnp
+      - run: pnpm run test
