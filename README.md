@@ -24,13 +24,15 @@ Usage:
   $ vite-bundle-visualizer <command> [options]
 
 Options:
+  -h, --help                Display this message
   --template -t <template>  Template to use, options are "raw-data" (JSON), "treemap", "list", "sunburst" and "network" (default: treemap)
-  --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: ${TMP_DIR}/stats.html)
+  --output -o <filepath>    Output file path, should be "**/*.html" or "**/*.json" (default: /var/folders/lb/9tn84c8x42nctvbs1fb3vxd40000gn/T/tmp-20782-nmqZuvXaZNxh/stats.html)
   --open <open>             Should open browser after generated, except when template is "json" (default: true)
   --config -c <file>        Use specified vite config file
   --entry --input -i        Use specified entry file, default is "index.html"
   --sourcemap               use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false
-  -h, --help                Display this message
+  --sourcemap               use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false
+  --mode -m <mode>          set env mode, defaults to production
 ```
 
 ## Screenshots
