@@ -11,6 +11,8 @@ const tmpobj = tmp.dirSync();
 
 const DEFAULT_OUTPUT = path.join(tmpobj.name, 'stats.html');
 
+cli.help()
+
 cli.option('--template -t <template>', 'Template to use, options are "raw-data" (JSON), "treemap", "list", "sunburst" and "network"', {
   default: 'treemap'
 })
@@ -28,7 +30,7 @@ cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea
 
 cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false')
 
-cli.help('--mode -m <mode>', 'set env mode, defaults to production')
+cli.option('--mode -m <mode>', 'set env mode, defaults to production')
 
 const parsed = cli.parse()
 
