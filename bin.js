@@ -26,11 +26,22 @@ cli.option('--entry --input -i', 'Use specified entry file, default is "index.ht
 
 cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false')
 
-cli.help()
+cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false')
+
+cli.help('--mode -m <mode>', 'set env mode, defaults to production')
 
 const parsed = cli.parse()
 
-const { template, t, h, help, output, o, open, config, c, entry, input, i, sourcemap } = parsed.options
+const {
+  template, t,
+  h, help,
+  output, o,
+  open,
+  config, c,
+  entry, input, i,
+  sourcemap,
+  mode, m,
+} = parsed.options
 
 await start({
   help: help || h,
@@ -39,5 +50,6 @@ await start({
   open: open === true || open === 'true' || Number(open) > 0,
   config: config || c,
   entry: entry || input || i,
+  mode: mode || m,
   sourcemap
 })

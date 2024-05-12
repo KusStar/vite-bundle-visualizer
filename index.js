@@ -21,7 +21,8 @@ const start = async ({
   output,
   config,
   entry,
-  sourcemap = false
+  sourcemap = false,
+  mode,
 }) => {
   if (help) {
     return
@@ -68,6 +69,7 @@ const start = async ({
 
   await build({
     configFile: config,
+    mode: mode,
     plugins: [
       {
         ...visualizer({
