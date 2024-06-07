@@ -31,7 +31,6 @@ Options:
   --config -c <file>        Use specified vite config file
   --entry --input -i        Use specified entry file, default is "index.html"
   --sourcemap               use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false
-  --sourcemap               use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false
   --mode -m <mode>          set env mode, defaults to production
 ```
 
