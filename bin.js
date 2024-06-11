@@ -28,8 +28,6 @@ cli.option('--entry --input -i', 'Use specified entry file, default is "index.ht
 
 cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false')
 
-cli.option('--sourcemap ', 'use sourcemap to calculate sizes of modules. By idea it will present more accurate results, defaults is false')
-
 cli.option('--mode -m <mode>', 'set env mode, defaults to production')
 
 const parsed = cli.parse()
