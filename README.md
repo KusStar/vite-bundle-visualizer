@@ -67,7 +67,7 @@ $ vite-bundle-visualizer -t network
 Output raw data (JSON) of stats
 
 ```console
-# @deprecated vite-bunlde-visualizer -t json
+# @deprecated vite-bundle-visualizer -t json
 $ vite-bundle-visualizer -t raw-data
 ```
 
