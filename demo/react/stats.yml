@@ -1,49 +1,93 @@
-assets/index.3f40be11.js:
+assets/index-7VOw1DKr.js:
   /index.html:
     rendered: 0
+    gzip: 0
+    brotli: 0
   /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.production.min.js:
-    rendered: 132530
+    rendered: 132340
+    gzip: 42383
+    brotli: 36863
   /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.production.min.js?commonjs-exports:
     rendered: 33
+    gzip: 53
+    brotli: 37
   /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/client.js:
-    rendered: 109
+    rendered: 102
+    gzip: 86
+    brotli: 83
   /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/client.js?commonjs-exports:
     rendered: 16
+    gzip: 36
+    brotli: 17
   /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js:
-    rendered: 772
+    rendered: 381
+    gzip: 219
+    brotli: 173
   /node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js?commonjs-module:
     rendered: 29
+    gzip: 49
+    brotli: 33
   /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react-jsx-runtime.production.min.js:
-    rendered: 912
+    rendered: 919
+    gzip: 555
+    brotli: 445
   /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react-jsx-runtime.production.min.js?commonjs-exports:
     rendered: 40
+    gzip: 60
+    brotli: 37
   /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react.production.min.js:
     rendered: 7591
+    gzip: 2792
+    brotli: 2399
   /node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react.production.min.js?commonjs-exports:
     rendered: 30
+    gzip: 50
+    brotli: 34
   /node_modules/.pnpm/react@18.2.0/node_modules/react/index.js:
-    rendered: 81
+    rendered: 78
+    gzip: 71
+    brotli: 70
   /node_modules/.pnpm/react@18.2.0/node_modules/react/index.js?commonjs-module:
     rendered: 26
+    gzip: 46
+    brotli: 30
   /node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js:
-    rendered: 96
+    rendered: 103
+    gzip: 84
+    brotli: 77
   /node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js?commonjs-module:
     rendered: 31
+    gzip: 51
+    brotli: 35
   /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/cjs/scheduler.production.min.js:
-    rendered: 4314
+    rendered: 4315
+    gzip: 1817
+    brotli: 1576
   /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/cjs/scheduler.production.min.js?commonjs-exports:
     rendered: 34
+    gzip: 54
+    brotli: 32
   /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/index.js:
-    rendered: 89
+    rendered: 94
+    gzip: 76
+    brotli: 64
   /node_modules/.pnpm/scheduler@0.23.0/node_modules/scheduler/index.js?commonjs-module:
     rendered: 30
+    gzip: 50
+    brotli: 34
   /src/App.tsx:
-    rendered: 93
+    rendered: 105
+    gzip: 120
+    brotli: 92
   /src/index.css:
-    rendered: 17
+    rendered: 0
+    gzip: 0
+    brotli: 0
   /src/main.tsx:
-    rendered: 136
-  react/jsx-runtime:
-    rendered: 35
-  vite/modulepreload-polyfill:
-    rendered: 1576
+    rendered: 154
+    gzip: 149
+    brotli: 112
+  vite/modulepreload-polyfill.js:
+    rendered: 1548
+    gzip: 579
+    brotli: 494
