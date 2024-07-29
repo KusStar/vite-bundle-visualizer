@@ -71,7 +71,7 @@ Output raw data (JSON) of stats
 $ vite-bundle-visualizer -t raw-data
 ```
 
-[demo/stats.json](./demo/stats.json)
+[demo/react/stats.json](./demo/react/stats.json)
 
 #### List
 
@@ -81,7 +81,7 @@ Output yml file with all the data
 $ vite-bundle-visualizer -t list
 ```
 
-[demo/stats.yml](./demo/stats.yml)
+[demo/react/stats.yml](./demo/react/stats.yml)
 
 ## Dependencies
 
