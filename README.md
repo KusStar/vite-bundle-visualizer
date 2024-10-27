@@ -4,11 +4,11 @@ Visualize vite bundle, like [webpack-bundle-analyzer](https://github.com/webpack
 
 A wrapper of  [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
 
-In most scenarios you shouldn't need this library, the recommended solution is to add
+> In most scenarios you shouldn't need this library, the recommended solution is to add
 `rollup-plugin-visualizer` directly to your vite configuration. However, if you are using
 vite, and want to run the visualizer directly from your command line via a CLI command
 instead without needing to build your site, now you have a solution with the
-`vite-bundle-visualizer`.
+`vite-bundle-visualizer`.([@wparad](https://github.com/wparad))
 
 ## Usage
 
